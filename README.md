@@ -1,6 +1,29 @@
 Example code for Meetup Practical Haskell
 October 20, 2025
 
+Tooling
+-------
+
+1. Install GHCUP
+
+https://www.haskell.org/ghcup/
+
+Note: on Linux, install ligmp-dev package, otherwise you get a warning about libgmp.so missing.
+
+2. Install the compiler (GHC), build tool & package manager (cabal) and the language server to use with VS Code (HLS)
+
+Haskell's tooling is a bit fragile, in particular the language server tends to break with updates to cabal and/or GHC. We will use the following versions of the compiler and tools, to make sure they all work together:
+
+ghcup install ghc 9.12.2
+ghcup install cabal 3.14.2.0
+ghcup install hls 2.11.0.0
+ghcup set ghc 9.12.2
+ghcup set cabal 3.14.2
+cabal update
+
+Example code
+------------
+
 Check out a branch, run `cabal build` to build the code. If it succeeds, run `cabal run` to run the program and look at `test.bmp` for the output.
 
 - branch `step1`
