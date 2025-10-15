@@ -71,14 +71,14 @@ library
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.21.0.0
+    build-depends:    base ^>=4.19.0.0
                       
 
     -- Directories containing source files.
     hs-source-dirs:   src
 
     -- Base language which the package is written in.
-    default-language: GHC2024
+    default-language: GHC2021
 
 executable haskell-trace
     -- Import common warning flags.
@@ -95,7 +95,7 @@ executable haskell-trace
 
     -- Other library packages from which modules are imported.
     build-depends:
-        base ^>=4.21.0.0,
+        base ^>=4.19.0.0,
         random,
         JuicyPixels,
         haskell-trace
@@ -104,7 +104,7 @@ executable haskell-trace
     hs-source-dirs:   app
 
     -- Base language which the package is written in.
-    default-language: GHC2024
+    default-language: GHC2021
 
     ghc-options:      -threaded -rtsopts -with-rtsopts=-N
 
@@ -113,7 +113,7 @@ test-suite haskell-trace-test
     import:           warnings
 
     -- Base language which the package is written in.
-    default-language: GHC2024
+    default-language: GHC2021
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
@@ -132,5 +132,5 @@ test-suite haskell-trace-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.21.0.0,
+        base ^>=4.19.0.0,
         haskell-trace
