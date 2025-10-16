@@ -70,7 +70,7 @@ library
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.19.0.0
+    build-depends:    base >= 4.7 && < 5
                       
 
     -- Directories containing source files.
@@ -94,7 +94,7 @@ executable haskell-trace
 
     -- Other library packages from which modules are imported.
     build-depends:
-        base ^>=4.19.0.0,
+        base >= 4.7 && < 5,
         random,
         JuicyPixels,
         haskell-trace
@@ -129,5 +129,5 @@ test-suite haskell-trace-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.19.0.0,
+        base >= 4.7 && < 5,
         haskell-trace
