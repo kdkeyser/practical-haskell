@@ -13,12 +13,14 @@ Note: on Linux, install ligmp-dev package, otherwise you get a warning about lib
 
 Haskell's tooling is a bit fragile, in particular the language server tends to break with updates to cabal and/or GHC. We will use the following versions of the compiler and tools, to make sure they all work together:
 
+```bash
 ghcup install ghc 9.12.2
 ghcup install cabal 3.14.2.0
 ghcup install hls 2.11.0.0
 ghcup set ghc 9.12.2
 ghcup set cabal 3.14.2
 cabal update
+```
 
 ## Example code
 
