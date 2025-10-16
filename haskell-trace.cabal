@@ -126,5 +126,5 @@ test-suite haskell-trace-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.19.0.0,
+        base >= 4.7 && < 5,
         haskell-trace
