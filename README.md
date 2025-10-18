@@ -38,3 +38,6 @@ Here we introduce the first raytracing concept. We introduce a simple red sphere
 
 We add a uniform light source, and specular lighting to the ray. 
 
+## branch `webservice`
+
+A Scotty based web service. Exposes a couple of endpoints, and demonstrates JSON parsing / generating. It's configured to run across all cores.
