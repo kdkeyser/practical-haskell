@@ -37,7 +37,7 @@ height :: Int
 height = 600
 
 displayZ :: Float
-displayZ = -1.0
+displayZ = 0.0
 
 -- | render determines the color of a pixel based on the x and y coordinates
 render :: Light.UniformLight -> Sphere -> Int -> Int -> PixelRGBF
@@ -55,7 +55,7 @@ render light sphere x y =
 
 main :: IO ()
 main =
-  let sphere = Sphere (makeVector 0.0 0.0 (-1.0)) 0.5
+  let sphere = Sphere (makeVector 0.0 0.0 (-1.0)) 1.0
       (Just lightDirection) = nonZero (makeVector 0.0 0.0 (-1.0))
       uniformLight = Light.UniformLight (normalize lightDirection) (Color 1.0 0.0 0.0)
       lookupPixel i j = render uniformLight sphere i j
