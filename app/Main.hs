@@ -36,7 +36,7 @@ height :: Int
 height = 600
 
 displayZ :: Float
-displayZ = -1.0
+displayZ = 0.0
 
 -- | render determines the color of a pixel based on the x and y coordinates
 render :: Sphere -> Int -> Int -> PixelRGBF
@@ -48,6 +48,6 @@ render sphere x y =
 
 main :: IO ()
 main =
-  let sphere = Sphere (Vector 0 0 (-1)) 0.5
+  let sphere = Sphere (Vector 0 0 (-1)) 1.0
   in let image = ImageRGBF $ generateImage (render sphere) width height
   in saveBmpImage "test.bmp" image
