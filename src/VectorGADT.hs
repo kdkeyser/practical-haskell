@@ -1,3 +1,6 @@
+{-# LANGUAGE GADTs #-}
+{-# LANGUAGE StandaloneDeriving #-}
+
 module VectorGADT
   ( VectorGADT,
     UnitVector,
